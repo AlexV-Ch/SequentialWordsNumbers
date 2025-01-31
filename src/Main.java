@@ -17,8 +17,8 @@ public class Main {
         StringBuilder newtext = new StringBuilder();
         if (text.length() != 0) {
             while ((end = text.indexOf(' ', begin)) != -1) {
-              //  end = text.indexOf(' ', begin);
-              //  newtext.append("(" + ++i + ") " + text.substring(begin, end) + " ");
+              // end = text.indexOf(' ', begin);
+              // newtext.append("(" + ++i + ") " + text.substring(begin, end) + " ");
                 newtext.append("(").append(++i).append(") ")
                         .append(text.substring(begin, end)).append(" ");
 
