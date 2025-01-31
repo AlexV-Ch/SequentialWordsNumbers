@@ -16,17 +16,16 @@ public class Main {
         //String newtext = "";
         StringBuilder newtext = new StringBuilder();
         if (text.length() != 0) {
-            while (text.indexOf(' ', begin) > -1) {
-                end = text.indexOf(' ', begin);
-                newtext.append("(" + ++i + ") " + text.substring(begin, end) + " ");
+            while ((end = text.indexOf(' ', begin)) != -1) {
+              //  end = text.indexOf(' ', begin);
+              //  newtext.append("(" + ++i + ") " + text.substring(begin, end) + " ");
+                newtext.append("(").append(++i).append(") ")
+                        .append(text.substring(begin, end)).append(" ");
 
                 begin = end + 1;
             }
-            newtext.append("(");
-            newtext.append(++i);
-            newtext.append(") ");
-            newtext.append(text.substring(begin));
-            newtext.append(" ");
+            newtext.append("(").append(++i).append(") ")
+                    .append(text.substring(begin)).append(" ");
         }
             return newtext.toString();
         }
