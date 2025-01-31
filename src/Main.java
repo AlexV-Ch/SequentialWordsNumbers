@@ -22,7 +22,7 @@ public class Main {
                 newtext.append("(").append(++i).append(") ")
                         .append(text.substring(begin, end)).append(" ");
 
-                begin = end + 1;
+                 begin = end + 1;
             }
             newtext.append("(").append(++i).append(") ")
                     .append(text.substring(begin)).append(" ");
