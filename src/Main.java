@@ -6,7 +6,7 @@ public class Main {
         System.out.println("Введите текст: ");
         String text =new Scanner(System.in).nextLine();
         //System.out.println(sequentialWordsNumbers(text));
-        System.out.println(SplitText.bigText(text));;
+        System.out.println(SplitText.bigText(text).trim());
     }
     }
     public static String sequentialWordsNumbers(String text) {
